@@ -1,0 +1,88 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SwtichCaseTest",
+            "request": "launch",
+            "mainClass": "SwtichCaseTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "ScannerTest",
+            "request": "launch",
+            "mainClass": "ScannerTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "IfElseTest",
+            "request": "launch",
+            "mainClass": "IfElseTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "IfElseTest",
+            "request": "launch",
+            "mainClass": "Learn.javacode.chapter03.IfElseTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "HelloChina",
+            "request": "launch",
+            "mainClass": "HelloChina",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "VariableTest5",
+            "request": "launch",
+            "mainClass": "Learn.javacode.chapter02.VariableTest5",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "ConditionExpr",
+            "request": "launch",
+            "mainClass": "ConditionExpr",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "ConditionTest",
+            "request": "launch",
+            "mainClass": "ConditionTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "BitExpr",
+            "request": "launch",
+            "mainClass": "BitExpr",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "BitTest",
+            "request": "launch",
+            "mainClass": "BitTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "LogicTest",
+            "request": "launch",
+            "mainClass": "LogicTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "name": "Python: File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "justMyCode": true
+        }
+    ]
+}

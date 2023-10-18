@@ -112,8 +112,7 @@ AR：kafka分区中的所有副本统称
 1)broker启动后在zk中注册-> 2)controller谁先注册，谁说了算 -> 3)由选举出来的Controller监听brokers变化-> 4)Controller决定Leader选举 选举规则在isr中存活为前提，按照AR中排在前面的优先，例如ar有1,0,2，isr为[1 0 2],则按照1,0,2顺序轮询 -> 5)Controller将节点信息上传到ZK；-> 6)其他Controller从zk同步相关信息；-> 7)假如Leader挂了->8)Controller监听到节点变化 -> 9)获取ISR-> 10)选取新的Leader-> 11)更新Leader和ISR
 ## Kafka副本
 1. 作用：提高数据可靠性
-2. 默认副本1个，生产环境一般配置为2个，保证数据的可靠性；太多副本会增加磁盘存储空间，增加网络上数据传输，降低
-	效率。
+2. 默认副本1个，生产环境一般配置为2个，保证数据的可靠性；太多副本会增加磁盘存储空间，增加网络上数据传输，降低效率。
 3. Kafka副本分为Leader和Follower。Kafka生产者只会把数据发往Leader，然后follower找Leader同步数据。
 4. Kafka分区所有副本称为AR(Assigned Repllicas)，AR=ISR+OSR OSR:表示Follower与Leader副本同步时，延迟过多的副本。
 5. Follower故障处理细节

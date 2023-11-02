@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ForTest1",
+            "request": "launch",
+            "mainClass": "ForTest1",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "ForTest",
+            "request": "launch",
+            "mainClass": "ForTest",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
+            "name": "SwitchCasePra",
+            "request": "launch",
+            "mainClass": "SwitchCasePra",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
             "name": "SwtichCaseTest",
             "request": "launch",
             "mainClass": "SwtichCaseTest",

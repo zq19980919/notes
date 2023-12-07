@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AnimalDemo",
+            "request": "launch",
+            "mainClass": "Learn.javacode.chapter_duixiang.AnimalDemo",
+            "projectName": "notes_ea6f6be8"
+        },
+        {
+            "type": "java",
             "name": "ForTest1",
             "request": "launch",
             "mainClass": "ForTest1",

@@ -1,3 +1,5 @@
+package com.zhangqiang.test02;
+
 public class VariableTest5 {
     public static void main(String[] args) {
         String str1 = "Hello world";

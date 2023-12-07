@@ -1,3 +1,5 @@
+package com.zhangqiang.test02;
+
 /*
 测试运算符的使用6：条件运算符
 

@@ -1,3 +1,5 @@
+package com.zhangqiang.test02;
+
 /**
  * SetValueTest
  * 测试运算符的使用2：赋值运算符

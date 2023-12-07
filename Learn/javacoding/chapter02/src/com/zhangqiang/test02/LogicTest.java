@@ -1,3 +1,5 @@
+package com.zhangqiang.test02;
+
 /*
  * 测试运算符的使用4：逻辑运算符
  * 1. & && | || ! ^

@@ -1,4 +1,4 @@
-/*
+package com.zhangqiang.test02;/*
 * 此VariableTest4用于测试强制类型转换
 *
 * 规则：

@@ -1,4 +1,6 @@
-/* 
+package com.zhangqiang.test02;
+
+/*
 测试运算符的使用3:比较运算符
 1. == != > < >= <= instanceof
 2. instanceof在面向对象的多态性的位置讲解

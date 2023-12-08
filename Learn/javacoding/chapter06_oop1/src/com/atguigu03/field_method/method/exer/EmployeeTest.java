@@ -1,4 +1,6 @@
-package com.atguigu03.field_method.field.exer2;
+package com.atguigu03.field_method.method.exer;
+
+import com.atguigu03.field_method.field.exer2.MyDate;
 
 /**
  * @author: 张强
@@ -15,11 +17,5 @@ public class EmployeeTest {
         e1.name = "张强";
         e1.age = 18;
         e1.salary = 20000;
-        e1.birthday = new MyDate();
-        e1.birthday.year = 1998;
-        e1.birthday.month = 9;
-        e1.birthday.day = 19;
-
-        System.out.println(e1.name + "的生日是" + e1.birthday);
-    }
+        e1.show();}
 }

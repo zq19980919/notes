@@ -12,4 +12,9 @@ public class MyDate {
     int year;// 年
     int month;// 月
     int day;// 日
+
+    // 方法
+    public String toString() {
+        return year + "年" + month + "月" + day + "日";
+    }
 }

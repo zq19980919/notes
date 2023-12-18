@@ -14,6 +14,7 @@ public class ValueTransferTest1 {
         int m = 10;
         test.method1(m);
         System.out.println("m的数值为"+m);// 10 传递的是数据值而不是地址
+        //1. 对于引用数据类型的变量来说
         int[] arr = new int[]{1,2,3,4,5};
         test.method2(arr);
         System.out.println(arr[0]);

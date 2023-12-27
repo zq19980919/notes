@@ -1,0 +1,31 @@
+package com.atguigu04.override;
+
+/**
+ * @author: 张强
+ * @Project: JavaTest
+ * @Pcakage: com.atguigu03._extends.Student
+ * @Date: 2023年12月27日 10:12
+ * @Description:
+ */
+public class Student extends Person {
+    String school;
+
+    public void study(){
+        System.out.println("学生学习");
+    }
+
+    public void show(){
+        System.out.println("name = " + name + ", age = " + getAge()); // 注意两个属性的访问权限
+    }
+
+    public void eat(){
+        System.out.println("学生应该多吃有营养的食物");
+    }
+
+    public Student info1(){return null;}
+
+    @Override
+    public void sleep() {
+        System.out.println("学生应该多睡觉, 保证身体健康");
+    }
+}

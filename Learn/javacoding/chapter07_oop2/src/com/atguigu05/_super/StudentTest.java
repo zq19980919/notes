@@ -16,6 +16,11 @@ public class StudentTest {
         s1.show();
         s1.show1();
         s1.show2();
+        System.out.println("*******************");
+
+        Student s2 = new Student("Tom",12);
+        System.out.println(s2.name+" "+s2.getAge());
+
 
     }
 }

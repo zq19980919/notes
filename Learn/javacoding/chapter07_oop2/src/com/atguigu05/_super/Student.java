@@ -11,6 +11,17 @@ public class Student extends Person {
     String school;
     int id = 1002;//学号
 
+    public Student(){
+        super();
+        System.out.println("Student()...");
+    }
+
+    public Student(String name, int age) {
+        super(name, age);
+    }
+
+
+
     public void study(){
         System.out.println("学生学习");
     }

@@ -554,7 +554,12 @@ for(①初始化部分;②循环条件部分;③④迭代部分){
 ![Alt text](image-6.png)
 #### 7.7.6.2 如何向上或向下转型
 * 向上转型：就是多态
-* 向下转型：使用强制符
+* 向下转型：使用强制符，但有可能出现类型转换异常，ClassCastException
+#### 7.7.6.3 instanceof关键字
+* 为了避免向下转型时出现ClassCastException异常，可以在向下转型之前，先进行instanceof的判断，一旦返回true，就进行向下转型。如果返回false，不进行向下转型。
+* 格式：(对象 instanceof 类型)
+* 说明：a instanceof A：判断对象a是否是类A的实例。如果是，返回true；如果不是，返回false。
+* 如果a instanceof A返回true，则a instanceof superA也返回true，其中，superA是类A的父类。
 
 
 

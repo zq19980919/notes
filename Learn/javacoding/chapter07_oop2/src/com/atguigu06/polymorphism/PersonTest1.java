@@ -22,8 +22,20 @@ public class PersonTest1 {
         System.out.println(p1 == m1); // p1和m1指向堆空间中的同一个对象
 
         /*
-        * 向下转型可能会出现
+        * 向下转型可能会出现 ClassCastException 的异常
         * */
         Person p2 = new Woman();
+//        Man m2 = (Man)p2;
+//        m2.earnMoney();
+//        System.out.println(m2.isSmoking);
+
+       /*
+       * 1 建议在向下转型之前，使用 instanceof 进行类型检查，避免出现 ClassCastException 的异常
+       * 2 格式 a instanceof A：判断对象a是否是类A的实例。如果是，返回true；如果不是，返回false
+       * */
+        if (p2 instanceof Man) {
+            Man m2 = (Man)p2;
+            m2.earnMoney();
+        }
     }
 }

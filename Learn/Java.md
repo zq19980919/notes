@@ -549,17 +549,56 @@ for(①初始化部分;②循环条件部分;③④迭代部分){
   > * 对扩展开放，对修改关闭
   > * 通俗解释：软件系统中的各个组件，如模块(moudules)、类(classes)以及功能(Functions)等，应该在不修改现有代码的基础上，引入新功能。
 * 多态的弊端：在多态的场景下，我们创建了子类的对象，也加载了子类特有的属性和方法。但是由于声明为父类的引用，导致我们没有方法直接调用子类特有的属性和方法。
-### 7.7.6 向上转型和向下转型
-#### 7.7.6.1 为什么要类型转换
+### 7.7.7 向上转型和向下转型
+#### 7.7.7.1 为什么要类型转换
 ![Alt text](image-6.png)
-#### 7.7.6.2 如何向上或向下转型
+#### 7.7.7.2 如何向上或向下转型
 * 向上转型：就是多态
 * 向下转型：使用强制符，但有可能出现类型转换异常，ClassCastException
-#### 7.7.6.3 instanceof关键字
+#### 7.7.7.3 instanceof关键字
 * 为了避免向下转型时出现ClassCastException异常，可以在向下转型之前，先进行instanceof的判断，一旦返回true，就进行向下转型。如果返回false，不进行向下转型。
 * 格式：(对象 instanceof 类型)
 * 说明：a instanceof A：判断对象a是否是类A的实例。如果是，返回true；如果不是，返回false。
 * 如果a instanceof A返回true，则a instanceof superA也返回true，其中，superA是类A的父类。
+
+## 7.8 Object类的使用
+### 7.8.1 如何理解根父类
+类 java.lang.Object是类层次的根类，即所有其他类的父类。每个类都使用Object作为超类。
+* Object类型的变量与除Object以外的任意引用数据类型的对象都存在多态引用
+* 所有对象(包括数组)都实现这个类的方法。
+  * Object类中没有声明属性
+  * Object类提供了一个空参的构造器
+* 如果一个类没有特别指定父类，那么默认则继承自Object类。
+### 7.8.2 Object类中的方法
+* 常用：toString()、equals()
+* 了解：clone()(深拷贝)、finalize()(GC回收时调用,jdk8后不建议使用)
+* 后续涉及：hashCode()、getClass()、wait()(有重载)、notify()、notifyAll()
+### 7.8.3 equals()方法使用
+适用性：任何引用数据类型都可以使用。
+定义：public boolean equals(Object obj) {return (this == obj);}
+> 子类使用说明：自定义的类在没有重写Object中equals()方法的情况下，调用的就是Object类中声明的equals()，比较两个对象的引用地址是否想同。（比较两个对象是否指向了堆空间中的同一个对象实体）
+> 对于像String、File、Date和包装类等，它们都重写了Object类中的equals()方法,用于比较两个对象的实体内容是否相等。
+> 在开发中，针对于自定义的类，常常会判断两个对象是否equals(),而此时常常判断两个对象的属性值是否相等，通常也需要重写Object方法。
+* 如何重写：
+  * 手动实现
+  * Idea自动生成(推荐)
+* 高频面试题：区分==和equals()
+  * ==:运算符，使用范围：基本数据类型、引用数据类型
+  * ==用于基本数据类型：判断数据值是否相等
+  * ==用于引用数据类型：判断地址值是否相等
+  * equals()：方法，只能使用在引用数据类型
+  * 对于equals，重写和不重写的区别
+### 7.8.4 toString()方法使用
+* Object类中toString()的定义：public String toString() {return getClass().getName() + "@" + Integer.toHexString(hashCode());}
+* 开发中的使用场景：
+> 平时我们在调用System.out.println()打印对象引用变量时，实际上就是调用当前对象的toString()方法。
+* 子类使用说明：
+> 自定义类：在没有重写时，默认调用的是Object类中的toString()方法，返回的是当前对象的地址值。
+> 像String、Date、File、包装类等都重写了Object类中的toString()方法，使得在调用对象的toString()时，返回“实体内容”信息。
+* 开发中使用说明：
+  * 如果不希望返回当前对象的地址值，而是希望返回当前对象的实体内容信息，则可以重写toString()方法。
+
+
 
 
 

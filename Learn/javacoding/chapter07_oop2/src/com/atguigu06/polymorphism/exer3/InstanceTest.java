@@ -29,14 +29,11 @@ public class InstanceTest {
         // a instanceof A:判断对象a是否是类A的实例。如果是，返回true；如果不是，返回false。
         if (e instanceof Graduate) {
             System.out.println("a graduate student");
-            System.out.println("a student");
-            System.out.println("a person");
-        } else if (e instanceof Student) {
-            System.out.println("a student");
-            System.out.println("a person");
-        } else {
-            System.out.println("a person");
         }
+        if (e instanceof Student) {
+            System.out.println("a student");
+        }
+        System.out.println("a person");
 
         // 错误的写法！编译不通过！
         // if( e instanceof Student){

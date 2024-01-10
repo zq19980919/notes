@@ -24,4 +24,8 @@ class Order{
     public Order() {
         orderId = 3;
     }
+
+    public Order(int orderId){
+        this.orderId = orderId;
+    }
 }
